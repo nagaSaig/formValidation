@@ -1,0 +1,104 @@
+:root{
+    --success-color:green;
+    --error-color:red;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(circle, rgba(121,148,144,1) 26%, rgba(252,255,224,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgb(71, 70, 67);
+    width: 430px;
+}
+h1{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form{
+    padding: 20px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.form-control label{
+    color: rgb(85, 80, 80);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.form-control input{
+    border: 2px solid grey;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 3.3px;
+    font-size: 14px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: grey;
+}
+.form-control.success input{
+    border-color: var(--success-color);
+}
+.form-control small{
+    color:var(--error-color);
+    font-size: 17px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+#DOB{
+    visibility: visible;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form button{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(55, 101, 185);
+    border: 2px solid rgb(55, 101, 185);
+    border-radius: 17px;
+    display: block;
+    font-size: 16px;
+    padding:10px;
+    margin-top: 20px;
+    width: 100%;
+}
+.popup{
+    width: 400px;
+    background-color: rgb(7, 100, 65);
+    border-radius: 8px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 300px;
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+}
+.open-slide{
+    top: 50%;
+    transform: translate(-50%,-50%);
+    visibility: visible;
+}
+.thanku{
+    margin-top: 90px;
+}
